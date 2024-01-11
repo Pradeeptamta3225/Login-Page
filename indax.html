@@ -21,25 +21,19 @@
               <div class="formfield-container">
                 
                 <p class="User-Info">User Name</p>
-                <input class="formfield" 
-                type="text" 
-                name="name" 
-                id="" 
-                placeholder="Enter User Name">
+                <input id="userName" class="formfield" type="text" placeholder="Enter User Name">
+                <p id="userError" class="error">Error</p>
                 
             
 
                 <p class="User-Info">Password</p>
-                <input class="formfield" 
-                type="password" 
-                name="password" 
-                id="" 
-                placeholder="Enter your password">
+                <input id="passWord" class="formfield" type="password" placeholder="Enter your password">
+                <p id="passwordError" class="error">Error</p>
 
               </div>
 
               <div>
-                <button type="submit" class="btn-pink" id="submit-btn">
+                <button onclick="validForm()" type="submit"class="btn-pink" id="submit-btn">
                   Send Message <i class="submit-icon fa-solid fa-paper-plane"></i>
                 </button>
               </div>
